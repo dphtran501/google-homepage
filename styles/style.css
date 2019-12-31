@@ -7,6 +7,7 @@ body {
 }
 
 #google-logo {
+    margin-top: 150px;
     margin-bottom: 20px;
 }
 
@@ -43,4 +44,61 @@ body {
     background-color: #f8f8f8;
     border: 1px solid #c6c6c6;
     color: #222;
+}
+
+#navbar-div {
+    margin: 20px 20px 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__link, .navbar__link:active, .navbar__link:visited {
+    font-size: 13px;
+    padding-left: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar__link:hover {
+    text-decoration: underline;
+}
+
+/*Removes padding of first link set in .navbar__link*/
+#navbar-div a:first-of-type {
+    padding-left: 0;
+}
+
+.navbar__link--rightAlign {
+    /* Auto margin absorbs all available space in its dimension.
+       On one item in set of flex items aligned to start, it creates a split.*/
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#google-apps-btn {
+    opacity: .50;
+}
+
+#google-apps-btn:hover {
+    opacity: 1;
+}
+
+#signin-btn {
+    margin-left: 15px;
+    padding: 8px 12px;
+    border-radius: 2px;
+    background: #4285f4;
+    color: #fff;
+    font-weight: bold;
+}
+
+#signin-btn:hover {
+    text-decoration: none;
+    box-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+
+#signin-btn:active {
+    box-shadow: 0 2px 0 rgba(0,0,0,.15);
+    background: #3c78dc;
 }
