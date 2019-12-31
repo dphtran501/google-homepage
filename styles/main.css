@@ -7,7 +7,7 @@ body {
 }
 
 #google-logo {
-    margin-top: 150px;
+    margin-top: 130px;
     margin-bottom: 20px;
 }
 
@@ -47,28 +47,47 @@ body {
 }
 
 #navbar-div {
-    margin: 20px 20px 0 20px;
+    margin: 20px 30px;
     display: flex;
     align-items: center;
 }
 
-.navbar__link, .navbar__link:active, .navbar__link:visited {
+#footer-div {
+    padding: 14px 30px;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar__link, .navbar__link:active, .navbar__link:visited{
     font-size: 13px;
     padding-left: 15px;
     color: #000;
     text-decoration: none;
 }
 
-.navbar__link:hover {
+.footer__link, .footer__link:active, .footer__link:visited {
+    font-size: 13px;
+    padding-left: 27px;
+    color: #5f6368;
+    text-decoration: none;
+}
+
+.navbar__link:hover, .footer__link:hover {
     text-decoration: underline;
 }
 
-/*Removes padding of first link set in .navbar__link*/
-#navbar-div a:first-of-type {
+/*Removes padding of first link set in .navbar__link and .footer__link*/
+#navbar-div a:first-of-type, #footer-div a:first-of-type {
     padding-left: 0;
 }
 
-.navbar__link--rightAlign {
+.navbar__link--rightAlign, .footer__link--rightAlign {
     /* Auto margin absorbs all available space in its dimension.
        On one item in set of flex items aligned to start, it creates a split.*/
     margin-left: auto;
